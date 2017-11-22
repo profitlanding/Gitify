@@ -173,6 +173,12 @@ class InstallPackageCommand extends BaseCommand
                     $package->save();
                     $package->install();
 
+                    // personal hack
+                    // run Backyard installer twice to nest resources properly
+                    if ($sig[0] == 'romanescobackyard' ) {
+                        $package->install();
+                    }
+
                     $this->output->writeln("<info>Package $packageSignature successfully installed.</info>");
                 }
 
