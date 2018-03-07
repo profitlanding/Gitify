@@ -182,7 +182,7 @@ class InstallModxCommand extends BaseCommand
             'cmsadmin' => $managerUser,
             'cmspassword' => $managerPass,
             'cmsadminemail' => $managerEmail,
-            'core_path' => $directory . 'core/',
+            'core_path' => $directory . 'core3/',
             'context_mgr_path' => $directory . 'manager/',
             'context_mgr_url' => $baseUrl . 'manager/',
             'context_connectors_path' => $directory . 'connectors/',
